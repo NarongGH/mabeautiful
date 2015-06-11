@@ -77,10 +77,67 @@ GENERAL
 /*============================
 CORE
 =========================== */
+/* ======================
+MIXIN
+====================== */
 /*============================
 LAYOUT
 =========================== */
 .l-header {
-  background: #fd5656; }
+  background: #3E9597;
+  position: relative;
+  height: 400px;
+  width: 100%; }
+  .l-header .header-profile {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    margin: auto;
+    bottom: 40px;
+    left: 0;
+    right: 0; }
+    @media screen and (max-width: 480px) {
+      .l-header .header-profile {
+        height: 300px; } }
+    .l-header .header-profile img {
+      width: 200px;
+      height: 200px;
+      background-color: #3E9597;
+      border-radius: 100%;
+      border: 10px solid #FFF; }
+    .l-header .header-profile p {
+      color: #ffffff;
+      font-family: arial;
+      font-size: 25px;
+      text-align: center;
+      font-weight: bold; }
+
+.l-navi .navi-list {
+  background: #ABDBDC; }
+  .l-navi .navi-list ul {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 0; }
+    .l-navi .navi-list ul li {
+      display: inline-block; }
+      @media screen and (max-width: 480px) {
+        .l-navi .navi-list ul li {
+          display: block;
+          padding: 10px 0; } }
+      .l-navi .navi-list ul li a {
+        font-size: 16px;
+        line-height: 20px;
+        font-family: tahoma;
+        font-weight: bold;
+        color: #2C6869;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 6px 40px 10px;
+        border-bottom: 4px solid transparent; }
+        .l-navi .navi-list ul li a:hover {
+          border-top: 4px solid #20494A; }
+      .l-navi .navi-list ul li .active {
+        border-top: 4px solid #20494A; }
 
 /*# sourceMappingURL=style.css.map */
